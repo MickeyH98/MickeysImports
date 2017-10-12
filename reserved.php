@@ -13,7 +13,7 @@ if($_REQUEST['delete']){ //if delete button clicked
   //set cookie
   setcookie("reserved", serialize($cookie_value), time() + (86400 * 30), "/");
   //page must be refreshed to access new cookie data
-  header("Refresh: 0, url=http://localhost:8888/PHPDealership/reserved.php"); //refresh page to view changes
+  header("Refresh: 0, url=http://mhernandez.road2hire.ninja/MickeysImports/reserved.php"); //refresh page to view changes
 
 }
 
@@ -23,8 +23,8 @@ if($_REQUEST['delete']){ //if delete button clicked
 <html>
 <head>
   <meta charset="utf-8">
-  <link rel="stylesheet" href="http://localhost:8888/PHPDealership/lib/css/normalize.css">
-  <link rel="stylesheet" href="http://localhost:8888/PHPDealership/lib/css/styles.css">
+  <link rel="stylesheet" href="http://mhernandez.road2hire.ninja/MickeysImports/lib/css/normalize.css">
+  <link rel="stylesheet" href="http://mhernandez.road2hire.ninja/MickeysImports/lib/css/styles.css">
   <link href="https://fonts.googleapis.com/css?family=Alex+Brush" rel="stylesheet">
   <title>Mickey's Imports Reserved</title>
 </head>
@@ -81,7 +81,7 @@ if($_REQUEST['delete']){ //if delete button clicked
     ?>
     </div>
 
-    <a href="http://localhost:8888/PHPDealership/products.php"><button id="reserveMoreButton">Reserve More</button></a>
+    <a href="http://mhernandez.road2hire.ninja/MickeysImports/products.php"><button id="reserveMoreButton">Reserve More</button></a>
 
   </div>
 

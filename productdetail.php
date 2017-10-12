@@ -14,8 +14,8 @@ if($_REQUEST['reserve']){ //if reserve button clicked
   //show popup when an item is reserved
   echo "<div class='reservedPopUp'>
           <p class='reservedPopUpMessage'>Successfully Reserved " . $_REQUEST['model'] . "</p>
-          <a href='http://localhost:8888/PHPDealership/products.php'><button id='reservedPopUpContinueButton'>Continue Browsing</button></a>
-          <a href='http://localhost:8888/PHPDealership/reserved.php'><button id='reservedPopUpViewButton'>View Reserved</button></a>
+          <a href='http://mhernandez.road2hire.ninja/MickeysImports/products.php'><button id='reservedPopUpContinueButton'>Continue Browsing</button></a>
+          <a href='http://mhernandez.road2hire.ninja/MickeysImports/reserved.php'><button id='reservedPopUpViewButton'>View Reserved</button></a>
         </div>";
 }
 
@@ -25,8 +25,8 @@ if($_REQUEST['reserve']){ //if reserve button clicked
 <html>
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="http://localhost:8888/PHPDealership/lib/css/normalize.css">
-    <link rel="stylesheet" href="http://localhost:8888/PHPDealership/lib/css/styles.css">
+    <link rel="stylesheet" href="http://mhernandez.road2hire.ninja/MickeysImports/lib/css/normalize.css">
+    <link rel="stylesheet" href="http://mhernandez.road2hire.ninja/MickeysImports/lib/css/styles.css">
     <link href="https://fonts.googleapis.com/css?family=Alex+Brush" rel="stylesheet">
     <title>Mickey's Imports Product Detail</title>
   </head>
@@ -70,7 +70,7 @@ if($_REQUEST['reserve']){ //if reserve button clicked
       </div>
     </div>
 
-    <a class="returnToInventoryLinkA" href="http://localhost:8888/PHPDealership/products.php"><button class="returnToInventoryLink">Back to Inventory</button></a>
+    <a class="returnToInventoryLinkA" href="http://mhernandez.road2hire.ninja/MickeysImports/products.php"><button class="returnToInventoryLink">Back to Inventory</button></a>
 
     <!--Footer-->
     <?php require "lib/inc/footer.php" ?>

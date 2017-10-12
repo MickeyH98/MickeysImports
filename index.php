@@ -6,7 +6,7 @@
   <link rel="stylesheet" href="lib/css/styles.css">
   <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
   <link href="https://fonts.googleapis.com/css?family=Alex+Brush" rel="stylesheet">
-  <link href="http://localhost:8888/PHPDealership/lib/dancingscript/DancingScript-Regular.ttf" rel="stylesheet">
+  <link href="http://mhernandez.road2hire.ninja/MickeysImports/lib/dancingscript/DancingScript-Regular.ttf" rel="stylesheet">
   <title>Mickey's Imports Index</title>
 </head>
 <body>
@@ -19,19 +19,19 @@
     <!--Slick Banner-->
       <div class="banner">
         <!--OnClick listeners instead of <a> tags because slick html requirements are strict -->
-        <img onclick="window.location='http://localhost:8888/PHPDealership/productdetail.php/?model=Aventador'"
+        <img onclick="window.location='http://mhernandez.road2hire.ninja/MickeysImports/productdetail.php/?model=Aventador'"
         src="http://mhernandez.road2hire.ninja/eCommerce/img/lamborghiniaventadorfront.jpg" alt="Aventador">
 
-        <img onclick="window.location='http://localhost:8888/PHPDealership/productdetail.php/?model=911%20Carrera'"
+        <img onclick="window.location='http://mhernandez.road2hire.ninja/MickeysImports/productdetail.php/?model=911%20Carrera'"
         src="http://mhernandez.road2hire.ninja/eCommerce/img/porsche911carrerafront.jpg" alt="911 Carrera">
 
-        <img onclick="window.location='http://localhost:8888/PHPDealership/productdetail.php/?model=z06%20Corvette'"
+        <img onclick="window.location='http://mhernandez.road2hire.ninja/MickeysImports/productdetail.php/?model=z06%20Corvette'"
         src="http://mhernandez.road2hire.ninja/eCommerce/img/chevroletz06corvettefront.jpg" alt=" Z06 Corvette">
 
-        <img onclick="window.location='http://localhost:8888/PHPDealership/productdetail.php/?model=458%20Italia'"
+        <img onclick="window.location='http://mhernandez.road2hire.ninja/MickeysImports/productdetail.php/?model=458%20Italia'"
         src="http://mhernandez.road2hire.ninja/eCommerce/img/ferrari458italiafront.jpg" alt="458 Italia">
 
-        <img onclick="window.location='http://localhost:8888/PHPDealership/productdetail.php/?model=P1'"
+        <img onclick="window.location='http://mhernandez.road2hire.ninja/MickeysImports/productdetail.php/?model=P1'"
         src="http://mhernandez.road2hire.ninja/eCommerce/img/mclarenp1front.jpg" alt="P1">
       </div>
     </div>
@@ -39,19 +39,19 @@
     <div class="featured-products">
       <h2>Featured Vehicles</h2>
       <div class="featured-products-slides">
-        <img onclick="window.location='http://localhost:8888/PHPDealership/productdetail.php/?model=GT-R%20Nismo'"
+        <img onclick="window.location='http://mhernandez.road2hire.ninja/MickeysImports/productdetail.php/?model=GT-R%20Nismo'"
         src="http://mhernandez.road2hire.ninja/eCommerce/img/nissangtrnismofront.jpg" alt="GT-R Nismo">
 
-        <img onclick="window.location='http://localhost:8888/PHPDealership/productdetail.php/?model=R8'"
+        <img onclick="window.location='http://mhernandez.road2hire.ninja/MickeysImports/productdetail.php/?model=R8'"
         src="http://mhernandez.road2hire.ninja/eCommerce/img/audir8front.jpg" alt="R8">
 
-        <img onclick="window.location='http://localhost:8888/PHPDealership/productdetail.php/?model=i8'"
+        <img onclick="window.location='http://mhernandez.road2hire.ninja/MickeysImports/productdetail.php/?model=i8'"
         src="http://mhernandez.road2hire.ninja/eCommerce/img/bmwi8front.jpg" alt="i8">
 
-        <img onclick="window.location='http://localhost:8888/PHPDealership/productdetail.php/?model=Continental%20GT'"
+        <img onclick="window.location='http://mhernandez.road2hire.ninja/MickeysImports/productdetail.php/?model=Continental%20GT'"
         src="http://mhernandez.road2hire.ninja/eCommerce/img/bentleycontinentalgtfront.jpg" alt="Continental GT">
 
-        <img onclick="window.location='http://localhost:8888/PHPDealership/productdetail.php/?model=Phantom'"
+        <img onclick="window.location='http://mhernandez.road2hire.ninja/MickeysImports/productdetail.php/?model=Phantom'"
         src="http://mhernandez.road2hire.ninja/eCommerce/img/rollsroycephantomfront.jpg" alt="Phantom">
       </div>
       <div class="h3">
