@@ -60,7 +60,7 @@ if($_REQUEST['delete']){ //if delete button clicked
       } catch (PDOException $e) {
         echo "No Vehicles have been reserved.";
       }
-      if($result){
+      if(isset($result)){
         foreach($result as $car){
         ?>
 
