@@ -4,9 +4,7 @@
   <meta charset="utf-8">
   <link rel="stylesheet" href="lib/css/normalize.css">
   <link rel="stylesheet" href="lib/css/styles.css">
-  <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
-  <link href="https://fonts.googleapis.com/css?family=Alex+Brush" rel="stylesheet">
-  <link href="http://mhernandez.road2hire.ninja/MickeysImports/lib/dancingscript/DancingScript-Regular.ttf" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="lib/slick/slick.css"/>
   <title>Mickey's Imports Index</title>
 </head>
 <body>
