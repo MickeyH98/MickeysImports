@@ -82,7 +82,7 @@ if(isset($_REQUEST['delete'])){ //if delete button clicked
     ?>
     </div>
 
-    <a href="http://mhernandez.road2hire.ninja/MickeysImports/products.php"><button id="reserveMoreButton">Reserve More</button></a>
+    <a href="http://mhernandez.road2hire.ninja/MickeysImports/products.php"><div id="reserveMoreButton">Reserve More</div></a>
 
   </div>
 
