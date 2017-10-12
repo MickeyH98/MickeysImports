@@ -14,7 +14,7 @@
 }
 
 #header h1 {
-  font-size: 3em;
+  font-size: 2em;
   border-bottom: solid 2px white;
   width: 70%;
   margin: 10px auto;
@@ -1013,6 +1013,9 @@ footer {
 
 @media screen and (min-width: 800px){
 
+  #header h1 {
+    font-size: 3em;
+
   /*NAV*/
 
   #navbar {
@@ -1185,7 +1188,7 @@ footer {
   }
 
   .reservedVehicleDetails h3 {
-    height: 120px;
+    height: 100px;
     font-size: 1.5em;
   }
 
