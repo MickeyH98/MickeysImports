@@ -28,7 +28,7 @@
 
         <div class="feedbackWrapper">
           <label for="comment">Comment</label>
-          <input type="textarea" name="comment" id="comment" placeholder="Your Comment" required>
+          <input type="text" name="comment" id="comment" placeholder="Your Comment" required>
         </div>
 
         <input class="submitFormButton" type="submit" value="Send" name="submit">

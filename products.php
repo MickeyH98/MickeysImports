@@ -230,7 +230,7 @@
         foreach($result as $car){
         ?>
         <a href="productdetail.php/?model=<?= $car['Model'] ?>">
-          <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+          <div class="flip-container">
   	        <div class="flipper">
   		        <div class="front">
                 <img src="<?= $car['ImgFront'] ?>" alt="Car Front">
