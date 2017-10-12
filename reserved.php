@@ -45,6 +45,9 @@ if($_REQUEST['delete']){ //if delete button clicked
       foreach (unserialize($_COOKIE["reserved"]) as $name){ $where .= "'" . $name . "'" . ", "; }
       $where = rtrim($where, ', ');
       $where .= ");";
+    } else {
+      $where = "";
+    }
 
       try {
         $sql = $db->prepare(
@@ -75,9 +78,6 @@ if($_REQUEST['delete']){ //if delete button clicked
       </form>
       <?php
       } //close foreach loop
-    } else {
-      echo "No Vehicles have been reserved.";
-    }
     ?>
     </div>
 
