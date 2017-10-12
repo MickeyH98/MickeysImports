@@ -843,6 +843,7 @@ body .productsListWrapper {
   box-shadow: 2px 2px 5px black;
   border-radius: 10px;
   transition: 500ms;
+  height: 150px;
 }
 
 .reservedVehicle:hover {
@@ -1113,7 +1114,7 @@ footer {
 
   .reservedVehicleDetails p,
   .reservedVehicleDetails h3 {
-    height: 50%;
+    height: 75px;
     font-size: 1em;
   }
 
@@ -1179,12 +1180,12 @@ footer {
 
   .reservedVehicleDetails p
   {
-    height: 20%;
+    height: 30px;
     font-size: 1.5em;
   }
 
   .reservedVehicleDetails h3 {
-    height: 80%;
+    height: 120px;
     font-size: 1.5em;
   }
 
