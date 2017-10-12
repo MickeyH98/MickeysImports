@@ -11,19 +11,19 @@
   }
   ?>
 
-  <a class="h1link" href="http://localhost:8888/PHPDealership/index.php"><h1>Mickey's Imports</h1></a>
+  <a class="h1link" href="http://mhernandez.road2hire.ninja/MickeysImports/index.php"><h1>Mickey's Imports</h1></a>
 
   <div id="openNavButton"></div>
 
   <nav id="navbar">
     <ul>
-      <li class="index"><a <?php selected("index"); ?> href="http://localhost:8888/PHPDealership/index.php">Home</a></li>
+      <li class="index"><a <?php selected("index"); ?> href="http://mhernandez.road2hire.ninja/MickeysImports/index.php">Home</a></li>
 
-      <li class="products"><a <?php selected("products"); ?> href="http://localhost:8888/PHPDealership/products.php">Inventory</a></li>
+      <li class="products"><a <?php selected("products"); ?> href="http://mhernandez.road2hire.ninja/MickeysImports/products.php">Inventory</a></li>
 
-      <li class="reserved"><a <?php selected("reserved"); ?> href="http://localhost:8888/PHPDealership/reserved.php">Reserved</a></li>
+      <li class="reserved"><a <?php selected("reserved"); ?> href="http://mhernandez.road2hire.ninja/MickeysImports/reserved.php">Reserved</a></li>
 
-      <li class="contact"><a <?php selected("contact"); ?> href="http://localhost:8888/PHPDealership/contact.php">Contact</a></li>
+      <li class="contact"><a <?php selected("contact"); ?> href="http://mhernandez.road2hire.ninja/MickeysImports/contact.php">Contact</a></li>
 
       <li><p class="search">Search</p>
         <div class="searchDropdown scrolled">
