@@ -1,7 +1,7 @@
 <?php
 require "lib/inc/dbconnect.php";
 
-if($_REQUEST['delete']){ //if delete button clicked
+if(isset($_REQUEST['delete'])){ //if delete button clicked
 
   $cookie_value = unserialize($_COOKIE["reserved"]); //grab cookie value
 
