@@ -902,7 +902,7 @@ body .productsListWrapper {
   box-shadow: none;
 }
 
-#reserveDeleteButton {
+.reserveDeleteButton {
   cursor: pointer;
   margin: 10px 0;
   font-size: 1.5em;
@@ -922,7 +922,7 @@ body .productsListWrapper {
   font-family: 'Ledger', sans-serif;
 }
 
-#reserveDeleteButton:hover {
+.reserveDeleteButton:hover {
   opacity: .7;
   box-shadow: none;
 }
@@ -1204,7 +1204,7 @@ footer {
     border-bottom-left-radius: 0;
   }
 
-  #reserveDeleteButton {
+  .reserveDeleteButton {
     width: 20%;
     margin: 20px 0%;
     height: 150px;

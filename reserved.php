@@ -66,7 +66,7 @@ if(isset($_REQUEST['delete'])){ //if delete button clicked
 
         <a href="productdetail.php/?model=<?= $car['Model'] ?>">
           <div class="reservedVehicle">
-            <img class="reservedVehicleImage" src='<?= $car["ImgFront"] ?>'></img>
+            <img class="reservedVehicleImage" src='<?= $car["ImgFront"] ?>' alt="Car Front">
             <div class="reservedVehicleDetails">
               <h3><?= $car["Year"] ?> <?= $car["Make"] ?> <?= $car["Model"] ?></h3>
               <p>$<?= number_format($car["Price"]) ?></p> <!-- number format adds commas -->
@@ -74,7 +74,7 @@ if(isset($_REQUEST['delete'])){ //if delete button clicked
           </div>
         </a>
         <form action="reserved.php/?model=<?= $car["Model"] ?>&delete=true" method="post">
-          <button id="reserveDeleteButton">Remove</button>
+          <button class="reserveDeleteButton">Remove</button>
         </form>
         <?php
         } //close foreach loop
