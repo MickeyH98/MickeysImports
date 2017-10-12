@@ -60,24 +60,25 @@ if($_REQUEST['delete']){ //if delete button clicked
       } catch (PDOException $e) {
         echo "No Vehicles have been reserved.";
       }
+      if($result){
+        foreach($result as $car){
+        ?>
 
-      foreach($result as $car){
-      ?>
-
-      <a href="productdetail.php/?model=<?= $car['Model'] ?>">
-        <div class="reservedVehicle">
-          <img class="reservedVehicleImage" src='<?= $car["ImgFront"] ?>'></img>
-          <div class="reservedVehicleDetails">
-            <h3><?= $car["Year"] ?> <?= $car["Make"] ?> <?= $car["Model"] ?></h3>
-            <p>$<?= number_format($car["Price"]) ?></p> <!-- number format adds commas -->
+        <a href="productdetail.php/?model=<?= $car['Model'] ?>">
+          <div class="reservedVehicle">
+            <img class="reservedVehicleImage" src='<?= $car["ImgFront"] ?>'></img>
+            <div class="reservedVehicleDetails">
+              <h3><?= $car["Year"] ?> <?= $car["Make"] ?> <?= $car["Model"] ?></h3>
+              <p>$<?= number_format($car["Price"]) ?></p> <!-- number format adds commas -->
+            </div>
           </div>
-        </div>
-      </a>
-      <form action="reserved.php/?model=<?= $car["Model"] ?>&delete=true" method="post">
-        <button id="reserveDeleteButton">Remove</button>
-      </form>
-      <?php
-      } //close foreach loop
+        </a>
+        <form action="reserved.php/?model=<?= $car["Model"] ?>&delete=true" method="post">
+          <button id="reserveDeleteButton">Remove</button>
+        </form>
+        <?php
+        } //close foreach loop
+      } //close if statement
     ?>
     </div>
 
