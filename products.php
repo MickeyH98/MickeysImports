@@ -1,4 +1,11 @@
-<?php require "lib/inc/dbconnect.php"; ?>
+<?php require "lib/inc/dbconnect.php";
+
+function spaceRemover($string){
+  $string = str_replace(' ','',$string); //remove white spaces
+  return $string;
+}
+
+?>
 <!DOCTYPE html>
 <html>
   <head>
@@ -67,8 +74,8 @@
               foreach($result as $car){
               ?>
               <div class="filterModel filter">
-                <input class="boxFilter" type="checkbox" name="model[]" id="<?= $car['Model'] ?>Checkbox" value="<?= $car['Model'] ?>">
-                <label for="<?= $car["Model"] ?>Checkbox"><?= $car["Model"] ?></label>
+                <input class="boxFilter" type="checkbox" name="model[]" id="<?php echo spaceRemover($car['Model']); ?>Checkbox" value="<?= $car['Model'] ?>">
+                <label for="<?php echo spaceRemover($car['Model']); ?>Checkbox"><?= $car["Model"] ?></label>
               </div>
               <?php
               }

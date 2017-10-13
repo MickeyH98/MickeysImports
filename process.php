@@ -28,7 +28,6 @@ require "./lib/inc/dbconnect.php";
     echo $e->getMessage();
   }
   //encode comments and echo them to contact page
-  echo json_encode($result); exit;
-
+  echo json_encode($result);
 
 ?>
