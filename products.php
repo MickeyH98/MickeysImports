@@ -168,7 +168,7 @@ function spaceReplacer($string, $replaceWith){
       echo " Year: ";
       echo $_POST["year"];
       echo " Price: ";
-      echo $_POST["price"]
+      echo $_POST["price"];
 
       if( isset($_POST["submit"]) &&
       (sizeof($_POST["make"]) > 0 || sizeof($_POST["model"]) > 0 || sizeof($_POST["year"]) > 0 || isset($_POST["price"])) ){
