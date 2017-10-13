@@ -424,12 +424,6 @@ body .productsListWrapper {
   transition: 500ms;
 }
 
-.flip-container:hover {
-  -webkit-animation: spin 1000ms infinite linear;
-  -moz-animation: spin 1000ms infinite linear;
-  -ms-animation: spin 1000ms infinite linear;
-  animation: spin 1000ms infinite linear;
-}
 /* flip the pane when hovered */
 .flip-container:hover .flipper, .flip-container.hover .flipper {
 	transform: rotateY(180deg);
@@ -961,34 +955,6 @@ footer {
 .footer-content a:hover {
   text-decoration: underline;
   font-size: 2.25em;
-}
-
-@-ms-keyframes spin {
-    0%, 100% { -ms-transform: rotate(0deg); }
-    25% { -ms-transform: rotate(-1deg)}
-    50% { -ms-transform: rotate(0deg);}
-    75% { -ms-transform: rotate(1deg)}
-}
-
-@-moz-keyframes spin {
-    0%, 100% { -moz-transform: rotate(0deg); }
-    25% { -moz-transform: rotate(-1deg)}
-    50% { -moz-transform: rotate(0deg);}
-    75% { -moz-transform: rotate(1deg)}
-}
-
-@-webkit-keyframes spin {
-    0%, 100% { -webkit-transform: rotate(0deg); }
-    25% { -webkit-transform: rotate(-1deg)}
-    50% { -webkit-transform: rotate(0deg);}
-    75% { -webkit-transform: rotate(1deg)}
-}
-
-@keyframes spin {
-    0%, 100% { transform: rotate(0deg); }
-    25% { transform: rotate(-1deg)}
-    50% { transform: rotate(0deg);}
-    75% { transform: rotate(1deg)}
 }
 
 @keyframes grow {
