@@ -5,6 +5,11 @@ function spaceRemover($string){
   return $string;
 }
 
+$testString = "a b c";
+$yeet = spaceRemover($testString);
+
+echo $yeet;
+
 ?>
 <!DOCTYPE html>
 <html>
