@@ -1,6 +1,11 @@
 <?php
 require "lib/inc/dbconnect.php";
 
+function spaceReplacer($string, $replaceWith){
+  $string = str_replace(' ', $replaceWith, $string); //replace white spaces with specified variable
+  return $string;
+}
+
 if(isset($_REQUEST['delete'])){ //if delete button clicked
 
   $cookie_value = unserialize($_COOKIE["reserved"]); //grab cookie value
@@ -62,6 +67,7 @@ if(isset($_REQUEST['delete'])){ //if delete button clicked
       }
       if(isset($result)){
         foreach($result as $car){
+          $replacedModel = spaceReplacer($car['Model'], '%20'); //replace spaces with %20 for url
         ?>
 
         <a href="productdetail.php/?model=<?= $car['Model'] ?>">
@@ -73,7 +79,7 @@ if(isset($_REQUEST['delete'])){ //if delete button clicked
             </div>
           </div>
         </a>
-        <form action="reserved.php/?model=<?= $car["Model"] ?>&delete=true" method="post">
+        <form action="reserved.php/?model=<?= $replacedModel ?>&delete=true" method="post">
           <button class="reserveDeleteButton">Remove</button>
         </form>
         <?php
