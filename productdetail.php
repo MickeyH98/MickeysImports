@@ -65,12 +65,12 @@ if(isset($_REQUEST['reserve'])){ //if reserve button clicked
         <img class="carImage" src='<?= $result[0]["ImgBack"] ?>' alt="Car Back">
 
         <form action="productdetail.php/?model=<?= $result[0]['Model'] ?>&reserve=true" method="post">
-          <div id="reserveButton" type="submit">Reserve this Vehicle</div>
+          <input id="reserveButton" type="submit">Reserve this Vehicle</input>
         </form>
       </div>
     </div>
 
-    <a class="returnToInventoryLinkA" href="http://mhernandez.road2hire.ninja/MickeysImports/products.php"><button class="returnToInventoryLink">Back to Inventory</button></a>
+    <a class="returnToInventoryLinkA" href="http://mhernandez.road2hire.ninja/MickeysImports/products.php"><div class="returnToInventoryLink">Back to Inventory</div></a>
 
     <!--Footer-->
     <?php require "lib/inc/footer.php" ?>
