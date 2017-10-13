@@ -70,7 +70,7 @@ if(isset($_REQUEST['delete'])){ //if delete button clicked
           $replacedModel = spaceReplacer($car['Model'], '%20'); //replace spaces with %20 for url
         ?>
 
-        <a href="productdetail.php/?model=<?= $car['Model'] ?>">
+        <a href="productdetail.php/?model=<?= $replacedModel ?>">
           <div class="reservedVehicle">
             <img class="reservedVehicleImage" src='<?= $car["ImgFront"] ?>' alt="Car Front">
             <div class="reservedVehicleDetails">
