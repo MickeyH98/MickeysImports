@@ -1,12 +1,7 @@
 <?php require "lib/inc/dbconnect.php";
 
-function spaceRemover($string){
-  $string = str_replace(' ','',$string); //remove white spaces
-  return $string;
-}
-
-function spaceReplacer($string){
-  $string = str_replace(' ','%20',$string); //remove white spaces
+function spaceReplacer($string, $replaceWith){
+  $string = str_replace(' ', $replaceWith, $string); //replace white spaces with specified variable
   return $string;
 }
 
@@ -51,7 +46,7 @@ function spaceReplacer($string){
                 echo $e->getMessage();
               }
               foreach($result as $car){
-                $spacelessMake = spaceRemover($car['Make']);
+                $spacelessMake = spaceReplacer($car['Make'], '');
               ?>
               <div class="filterMake filter">
                 <input class="boxFilter" type="checkbox" name="make[]" id="<?= $spacelessMake ?>Checkbox" value="<?= $car['Make'] ?>">
@@ -79,7 +74,7 @@ function spaceReplacer($string){
               }
 
               foreach($result as $car){
-                $spacelessModel = spaceRemover($car['Model']);
+                $spacelessModel = spaceReplacer($car['Model'], '');
               ?>
               <div class="filterModel filter">
                 <input class="boxFilter" type="checkbox" name="model[]" id="<?= $spacelessModel ?>Checkbox" value="<?= $car['Model'] ?>">
@@ -243,7 +238,7 @@ function spaceReplacer($string){
           echo "No results match.";
         }
         foreach($result as $car){
-          $replacedModel = spaceReplacer($car['Model']);
+          $replacedModel = spaceReplacer($car['Model'], '%20'); //replace spaces with %20 for url
         ?>
         <a href="productdetail.php/?model=<?= $replacedModel ?>">
           <div class="flip-container">
