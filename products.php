@@ -160,7 +160,7 @@ function spaceReplacer($string, $replaceWith){
 
       <!--Generate Products based on filter results-->
       <?php
-      $where = "";
+      $where = ""; //instantiate variables so none are undefined later on
 
       if(isset($_POST["make"])){
         $_POST["make"] = $_POST["make"];
@@ -185,15 +185,6 @@ function spaceReplacer($string, $replaceWith){
       }else {
         $_POST["price"] = null;
       }
-
-      echo " Make: ";
-      var_dump( $_POST["make"] );
-      echo " Model: ";
-      var_dump( $_POST["model"] );
-      echo " Year: ";
-      var_dump( $_POST["year"] );
-      echo " Price: ";
-      echo $_POST["price"];
 
       if( isset($_POST["submit"]) &&
       (sizeof($_POST["make"]) > 0 || sizeof($_POST["model"]) > 0 || sizeof($_POST["year"]) > 0 || isset($_POST["price"])) ){
