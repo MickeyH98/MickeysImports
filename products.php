@@ -5,11 +5,6 @@ function spaceRemover($string){
   return $string;
 }
 
-$testString = "a b c";
-$yeet = spaceRemover($testString);
-
-echo $yeet;
-
 ?>
 <!DOCTYPE html>
 <html>
@@ -77,9 +72,8 @@ echo $yeet;
                 echo $e->getMessage();
               }
 
-              $spacelessModel = spaceRemover($car['Model']);
-
               foreach($result as $car){
+                $spacelessModel = spaceRemover($car['Model']);
               ?>
               <div class="filterModel filter">
                 <input class="boxFilter" type="checkbox" name="model[]" id="<?= $spacelessModel ?>Checkbox" value="<?= $car['Model'] ?>">
