@@ -46,10 +46,11 @@ function spaceRemover($string){
                 echo $e->getMessage();
               }
               foreach($result as $car){
+                $spacelessMake = spaceRemover($car['Make']);
               ?>
               <div class="filterMake filter">
-                <input class="boxFilter" type="checkbox" name="make[]" id="<?= $car['Make'] ?>Checkbox" value="<?= $car['Make'] ?>">
-                <label for="<?= $car["Make"] ?>Checkbox"><?= $car["Make"] ?></label>
+                <input class="boxFilter" type="checkbox" name="make[]" id="<?= $spacelessMake ?>Checkbox" value="<?= $car['Make'] ?>">
+                <label for="<?= $spacelessMake ?>Checkbox"><?= $car["Make"] ?></label>
               </div>
               <?php
               } //close foreach loop
