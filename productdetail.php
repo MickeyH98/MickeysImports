@@ -1,6 +1,6 @@
 <?php
 // <!-- ON CLICK ADD MODEL TO RESERVED ARRAY -->
-if($_REQUEST['reserve']){ //if reserve button clicked
+if(isset($_REQUEST['reserve'])){ //if reserve button clicked
 
   $cookie_value = []; //set to empty array if no cookie
 
@@ -65,7 +65,7 @@ if($_REQUEST['reserve']){ //if reserve button clicked
         <img class="carImage" src='<?= $result[0]["ImgBack"] ?>' alt="Car Back">
 
         <form action="productdetail.php/?model=<?= $result[0]['Model'] ?>&reserve=true" method="post">
-          <button id="reserveButton" type="submit">Reserve this Vehicle</button>
+          <div id="reserveButton" type="submit">Reserve this Vehicle</div>
         </form>
       </div>
     </div>
