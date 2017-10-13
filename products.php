@@ -71,11 +71,14 @@ function spaceRemover($string){
               } catch (PDOException $e) {
                 echo $e->getMessage();
               }
+
+              $spacelessModel = spaceRemover($car['Model']);
+
               foreach($result as $car){
               ?>
               <div class="filterModel filter">
-                <input class="boxFilter" type="checkbox" name="model[]" id="<?php echo spaceRemover($car['Model']); ?>Checkbox" value="<?= $car['Model'] ?>">
-                <label for="<?php echo spaceRemover($car['Model']); ?>Checkbox"><?= $car["Model"] ?></label>
+                <input class="boxFilter" type="checkbox" name="model[]" id="<?= $spacelessModel ?>Checkbox" value="<?= $car['Model'] ?>">
+                <label for="<?= $spacelessModel ?>Checkbox"><?= $car["Model"] ?></label>
               </div>
               <?php
               }
