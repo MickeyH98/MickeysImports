@@ -161,6 +161,31 @@ function spaceReplacer($string, $replaceWith){
       <!--Generate Products based on filter results-->
       <?php
       $where = "";
+
+      if(isset($_POST["make"])){
+        $_POST["make"] = $_POST["make"];
+      }else {
+        $_POST["make"] = [];
+      }
+
+      if(isset($_POST["model"])){
+        $_POST["model"] = $_POST["model"];
+      }else {
+        $_POST["model"] = [];
+      }
+
+      if(isset($_POST["year"])){
+        $_POST["year"] = $_POST["year"];
+      }else {
+        $_POST["year"] = [];
+      }
+
+      if(isset($_POST["price"])){
+        $_POST["price"] = $_POST["price"];
+      }else {
+        $_POST["price"] = null;
+      }
+
       echo " Make: ";
       var_dump( $_POST["make"] );
       echo " Model: ";
