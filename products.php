@@ -5,6 +5,11 @@ function spaceRemover($string){
   return $string;
 }
 
+function spaceReplacer($string){
+  $string = str_replace(' ','%20',$string); //remove white spaces
+  return $string;
+}
+
 ?>
 <!DOCTYPE html>
 <html>
@@ -238,8 +243,9 @@ function spaceRemover($string){
           echo "No results match.";
         }
         foreach($result as $car){
+          $replacedModel = spaceReplacer($car['Model']);
         ?>
-        <a href="productdetail.php/?model=<?= $car['Model'] ?>">
+        <a href="productdetail.php/?model=<?= $replacedModel ?>">
           <div class="flip-container">
   	        <div class="flipper">
   		        <div class="front">
