@@ -162,11 +162,11 @@ function spaceReplacer($string, $replaceWith){
       <?php
       $where = "";
       echo " Make: ";
-      echo $_POST["make"];
+      var_dump( $_POST["make"] );
       echo " Model: ";
-      echo $_POST["model"];
+      var_dump( $_POST["model"] );
       echo " Year: ";
-      echo $_POST["year"];
+      var_dump( $_POST["year"] );
       echo " Price: ";
       echo $_POST["price"];
 
