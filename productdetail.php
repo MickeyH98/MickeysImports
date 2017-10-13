@@ -65,7 +65,7 @@ if(isset($_REQUEST['reserve'])){ //if reserve button clicked
         <img class="carImage" src='<?= $result[0]["ImgBack"] ?>' alt="Car Back">
 
         <form action="productdetail.php/?model=<?= $result[0]['Model'] ?>&reserve=true" method="post">
-          <input id="reserveButton" type="submit">Reserve this Vehicle</input>
+          <input id="reserveButton" type="submit" value="Reserve this Vehicle">
         </form>
       </div>
     </div>
